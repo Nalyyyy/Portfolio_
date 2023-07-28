@@ -10,7 +10,7 @@ export default function Loader() {
 
   return (
     <div className='loader'>
-        <img src='assets/pictures/loader.gif' className='loaderGif'/>
+        <img src='assets/pictures/loader.gif' className='loaderGif' alt='loader²'/>
     </div>
   )
 }

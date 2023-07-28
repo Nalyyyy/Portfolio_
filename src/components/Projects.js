@@ -48,15 +48,14 @@ export default function Projects() {
     }
 
     let lilArray = [];
-    lilArray.push(<img src={jsonProjects[x].picture} className={'pictureProject pictureProject'+x}onClick={clicked}/>);
+    lilArray.push(<img src={jsonProjects[x].picture} className={'pictureProject pictureProject'+x}onClick={clicked} alt={jsonProjects[x].name}/>);
     lilArray.push(<video controls autoPlay src={jsonProjects[x].link} type="video/mp4" className={'video none video'+x}/>)
     lilArray.push(<h3 className='projectName'>{jsonProjects[x].name}</h3>);
     lilArray.push(<p className={'description none description'+x}>{jsonProjects[x].description}</p>);
     lilArray.push(<p className={'problems none problems'+x}>{jsonProjects[x].problèmes}</p>);
     let skillsArray =[];
-    const test = jsonProjects[x].skills;
     for (let i =0; i<jsonProjects[x].skills.length;i++){
-      skillsArray.push(<img src={jsonProjects[x].skills[i]}  className='skillProject'/>)
+      skillsArray.push(<img src={jsonProjects[x].skills[i]}  className='skillProject' alt='technologie'/>)
     };
     lilArray.push(<div className={'skillsProject none skillsProject'+[x]}>{skillsArray}</div>);
     array.push(<div className={'oneProject project'+x} >{lilArray}</div>)

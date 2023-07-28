@@ -6,7 +6,7 @@ export default function SwitchThème() {
 
     const switchThème = ()=>{
         const headerConfig = document.querySelector('.headerBackground');
-        if (switchValue == 0){
+        if (switchValue === 0){
             document.documentElement.style.setProperty('--transition', '0s');
             document.documentElement.style.setProperty('--text', '#262626');
             document.documentElement.style.setProperty('--background', '#f1f1f1');
@@ -49,8 +49,8 @@ export default function SwitchThème() {
 
   return (
     <div onClick={switchThème} className='switch'>
-      <img src='assets/icons/sun.svg' className='sun'/>
-      <img src='assets/icons/moon.png'className='moon none'/>
+      <img src='assets/icons/sun.svg' className='sun' alt='sun'/>
+      <img src='assets/icons/moon.png'className='moon none' alt='moon'/>
     </div>
   )
 }

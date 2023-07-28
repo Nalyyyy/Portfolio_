@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/skills.css'
 import jsonSkills from '../assets/skills.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Skills() {
