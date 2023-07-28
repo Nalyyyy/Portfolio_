@@ -1,0 +1,36 @@
+.cursor{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 4;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    background-color: white;
+    transition: 0s;
+}
+.click{
+    animation: animateClick .5s forwards;
+}
+.cursor::after{
+    content: '';
+    width: 3px;
+    display: block;
+    height: 3px;
+    background-color: black;
+    position: relative;
+    left: 45%;
+    top: 45%;
+    border-radius: 50%;
+}
+@keyframes animateClick{
+    0%{
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

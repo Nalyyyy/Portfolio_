@@ -1,0 +1,259 @@
+html{
+    scroll-behavior: smooth;
+}
+/* Création du light et dark mode grâce aux classes css  */
+:root{
+    --text: #f1f1f1;
+    --background: #0b0b0b;
+    --header:#f1f1f1;
+    --greenRed: #08FF2D;
+    --greenBackground : #050505;
+}
+h1 ,h2, p , .star {
+    color: var(--text);
+}
+*{
+    transition: .3s ease-in;
+}
+body{
+    cursor: none;
+    background-color: var(--background);
+    /* padding: 0 150px; */
+    font-family: 'poppins',sans-serif;
+}
+.content{
+    padding: 0 150px;
+}
+.footer , .headerBackground{
+    background-color: var(--background);
+}
+.footerText , .logo, .hook{
+    color: var(--text);
+}
+
+ .chevron{
+    color: var(--greenRed);
+}
+.clickScrollbar{
+    border-image: linear-gradient(to top, var(--greenRed), var(--background)) 1 100%;
+}
+.scrollbar{
+    background: linear-gradient(to top, var(--greenRed), var(--background));
+}
+
+.headerBackground{
+    border-bottom: 1px solid var(--text);
+}
+.left, .right{
+    background-color: var(--background);
+}
+.hackerContent:hover{
+    color: var(--greenRed);
+    transition: 0s;
+    text-shadow: var(--greenRed) 10px 0 50px ;
+}
+.hook::after{
+    background-color: var(--greenRed);
+}
+.backGreen{
+    background-color: var(--background);
+}
+.hackerContent{
+    color: var(--greenBackground);
+}
+.projectClicked{
+    background-color: var(--greenBackground);
+}
+.description , .problems{
+    color: var(--text);
+}
+.projectName{
+    color: var(--text);
+}
+form div > input, form div > select, form div > textarea {
+    background-color: var(--text);
+}
+.merci{
+    color: var(--text);
+}
+
+.close{
+    opacity: 0; 
+    transition: opacity 1s ease-out; 
+    pointer-events: none;
+}
+.none{
+    display: none!important;
+}
+
+
+
+.h1intro{
+    position: relative;
+    pointer-events: none;
+    margin-top: 230px;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 0%;
+    line-height: 78px;
+}
+.h2intro{
+    position: relative;
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 180px;
+    pointer-events: none;
+}
+.intro{
+    font-size: 2vw;
+    margin-top: 75px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.bigChevron{
+    color: var(--greenRed);
+    display: block;
+    text-align: center;
+    cursor: none;
+    font-size: 30px;
+}
+
+.line{
+    height: 1px;
+    background-color: var(--greenRed);
+    width: 60%;
+    margin: auto;
+    bottom: 50px;
+}
+
+
+h2 {
+    font-size: 44px;
+    text-align: center;
+    margin: 200px 0px 0px 0px;
+}
+
+
+.aProposContent{
+    font-size: 25px;
+    text-align: left;
+    padding: 50px 100px 0px;
+    margin: 50px 0px 0px 0px;
+}
+.aProposContent > a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+.aProposContent > a:hover{
+    text-decoration: underline 1.5px var(--greenRed); 
+}
+
+.mesCompétencesContent{
+    font-size: 25px;
+    text-align: left;
+    padding: 0px 100px;
+    margin: 50px 0px 0px 0px;
+}
+
+#Contact{
+    margin-top: 100px;
+}
+
+form div > input::placeholder, form div > textarea::placeholder {
+    color: var(--background);
+} 
+form div > select:invalid {
+    color: var(--background);
+}
+form button{
+    background: var(--text);
+    border: var(--background) solid 1px;
+    border-radius: 5px;
+    color: var(--background);
+}
+label{
+    color: var(--text);
+}
+
+.switch{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--text);
+    bottom: 2vh;
+    right:2vw;
+    z-index: 3;
+}   
+.sun{
+    width: 40px;
+    color: var(--text);
+    animation: sunMoon 2s infinite linear;
+}
+.moon{
+    width: 60px;
+    color: var(--background);
+    animation: sunMoon 2s   linear infinite;
+}
+@keyframes sunMoon{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(33deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-33deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.footer{
+    width: 100%;
+    border-top: 1px solid var(--text);
+    height: 130px;
+    position: absolute;
+    left: 0%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.iconsFooter{
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+    margin: 10px;
+}
+.iconSpan{
+    display: flex;
+    background-color: #f1f1f1;
+    border: solid 2px #0b0b0b;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.iconSpan:hover{
+    opacity: 0.5;
+}
+.github, .instagram, .mail{
+    width: 20px;
+}
+.footerText{
+    margin: 0%;
+}
+
+

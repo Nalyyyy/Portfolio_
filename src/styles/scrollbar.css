@@ -1,0 +1,29 @@
+/* on cache la scrollbar  */
+::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+/* on crée notre scrollbar  */
+
+.scrollbar{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 10px;
+    height:0 ;
+    opacity: 0;
+    z-index: 2;
+    transition: 0s;
+}
+
+.clickScrollbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    border-left: solid 1px;
+    z-index: 2;
+    transition: 0s;
+}

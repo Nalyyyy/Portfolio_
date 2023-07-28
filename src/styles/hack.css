@@ -1,0 +1,73 @@
+.backGreen{
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    height: 400px;
+    margin: auto;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+.left{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 15%;
+    height: 100%;
+    z-index: 1;
+}   
+.right{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 15%;
+    height: 100%;
+    z-index: 1;
+}
+:root {
+    --transition : 2s
+}
+.hackerContent{
+    font-size: 20px;
+    user-select: none;
+    transition: var(--transition);
+}
+
+.hackerContent:hover{
+    transition: 0s;
+}
+.textLine{
+    line-height: 20px;
+    display: flex;
+    margin: 0;
+    animation : animation 35s linear infinite;
+    animation-delay: -80s;
+    box-sizing: border-box;
+}
+.textLine2{
+    width: 100%;
+    line-height: 20px;
+    display: flex;
+    margin: 0;
+    animation : animation2 35s linear infinite;
+    animation-delay: -80s;
+    box-sizing: border-box
+}
+
+@keyframes animation {
+    0%{
+        transform: translateX(-190%);
+    }
+    100%{
+        transform: translateX(15%);
+    }
+}
+@keyframes animation2 {
+    0%{
+        transform: translateX(15%);
+    }
+    100%{
+        transform: translateX(-190%);
+    }
+}
+

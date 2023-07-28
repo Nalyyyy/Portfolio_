@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Site vitrine d'une architecte d'intérieur",
+    "description": "Projet réalisé durant ma formation chez OpenClassrooms, c'est un site vitrine pour 'Sophie Bluel' avec la possibilité pour l'admin de modifier sa galerie",
+    "problèmes": "J'ai réalisé le front de ce site avec JavaScript vanilla, j'ai dû créer une modale, une authentification avec token, filtrer des éléments, communiquer via une API... ",
+    "skills": ["assets/icons/JavaScript.svg"],
+    "picture": "assets/pictures/SophieBluel.png",
+    "link": "assets/projects/archi.mp4"
+  },
+  {
+    "name": "Site vitrine d'une photographe",
+    "description": "Projet réalisé durant ma formation chez OpenClassrooms, c'est un site vitrine pour 'Nina Carducci'",
+    "problèmes": "J'ai débuggé un site déjà existant, j'ai optimiser les performances du site, le SEO, l'accessibilité puis j'ai ajouté le référencement local. ",
+    "skills": ["assets/icons/HTML.svg", "assets/icons/Lighthouse.svg"],
+    "picture": "assets/pictures/NinaCarducci.png",
+    "link": "assets/projects/photo.mp4"
+  },
+  {
+    "name": "Kasa",
+    "description": "Projet réalisé durant ma formation chez OpenClassrooms, c'est le front d'un site qui permettrait de découvrir des locations immobilières.",
+    "problèmes": "J'ai réalisé le front-end de ce site avec React, j'ai appris à utiliser les composants, les routes avec React Router...",
+    "skills": ["assets/icons/React.svg"],
+    "picture": "assets/pictures/kasa.png",
+    "link": "assets/projects/kasa.mp4"
+  },
+  {
+    "name": "Mon vieux grimoire",
+    "description": "Projet réalisé durant ma formation chez OpenClassrooms, c'est un site qui permet de découvrir des livres, d'en publier ou encore de les noter.",
+    "problèmes": "J'ai réalisé le back-end de ce site en apprenant à créer une base de données, un serveur, à traiter des requêtes, sécurisé une API...",
+    "skills": ["assets/icons/NodeJS.svg", "assets/icons/MongoDB.svg"],
+    "picture": "assets/pictures/MonVieuxGrimoire.png",
+    "link": "assets/projects/grimoire.mp4"
+  }
+]

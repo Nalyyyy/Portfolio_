@@ -1,0 +1,32 @@
+[
+  {
+    "name": "HTLM5",
+    "stars": 4,
+    "img": "assets/icons/HTML.svg"
+  },
+  {
+    "name": "JavaScript",
+    "stars": 4,
+    "img": "assets/icons/JavaScript.svg"
+  },
+  {
+    "name": "CSS",
+    "stars": 4,
+    "img": "assets/icons/CSS.svg"
+  },
+  {
+    "name": "React",
+    "stars": 4,
+    "img": "assets/icons/React.svg"
+  },
+  {
+    "name": "NodeJS",
+    "stars": 3,
+    "img": "assets/icons/NodeJS.svg"
+  },
+  {
+    "name": "Figma",
+    "stars": 3,
+    "img": "assets/icons/Figma.svg"
+  }
+]
