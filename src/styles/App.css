@@ -9,7 +9,7 @@ html{
     --greenRed: #08FF2D;
     --greenBackground : #050505;
 }
-h1 ,h2, p , .star {
+h1 ,h2, p , h3, .star {
     color: var(--text);
 }
 *{
@@ -192,11 +192,13 @@ label{
 }   
 .sun{
     width: 40px;
+    height: auto;
     color: var(--text);
     animation: sunMoon 2s infinite linear;
 }
 .moon{
     width: 60px;
+    height: auto;
     color: var(--background);
     animation: sunMoon 2s   linear infinite;
 }
@@ -257,3 +259,46 @@ label{
 }
 
 
+@media screen and (max-width:1300px){
+    .icon{margin-right: 20px!important;}
+}
+
+@media screen and (max-width:1100px){
+    .aProposContent{padding: 50px 50px 0px;}
+}
+
+@media screen and (max-width:1000px){
+    .projects{display: flex!important;
+        flex-direction: column!important;}
+    .oneProject{width: 65vw!important;
+        height: 40vw!important;}
+    .icon{height: 50px!important;}
+    .star{height: 30px!important;}
+    .mesCompétencesContent{padding: 0%!important;}
+    .aProposContent{padding: 50px 20px 0px!important;}
+    .intro{font-size: 25px!important;}
+    form{margin: 75px 0 100px 0!important;
+        width: 100%!important;}
+    .iconsFooter{width: 24vw!important;}
+}
+
+@media screen and (max-width:850px){
+    .header{height: 250px!important;
+        flex-direction: column!important;
+        align-items: start!important;}
+    .headerContent{flex-direction: column!important;
+        margin-top: 20px!important;
+        margin-left: 30px!important;}
+    .hook{font-size: 19px!important;
+        margin-bottom: 5px!important;}
+    .chevron{position: fixed!important;
+        right: 5px!important;}
+    .scrollbar, .clickScrollbar{
+        display: none!important;}
+    .skills{display: flex!important;
+        flex-direction: column!important;}
+    .skill{margin-bottom: 20px!important;}
+    .icon{height:100px !important;
+        margin-right: 40px!important;}
+    .star{height: 50px!important;}
+}

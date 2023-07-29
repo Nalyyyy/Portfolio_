@@ -13,12 +13,12 @@ export default function Skills() {
          let stars = [null] ;
          for(let i = 0; i<5 ; i++){
           if(i<jsonSkills[x].stars){
-           stars.push( <FontAwesomeIcon icon="fa-solid fa-star" key={x} className='star'/> )
+           stars.push( <FontAwesomeIcon icon="fa-solid fa-star" key={i+'etoile'+x} className='star'/> )
           }  
           else{
-           stars.push(<FontAwesomeIcon icon="fa-regular fa-star" key={x} className='star'/>)
+           stars.push(<FontAwesomeIcon icon="fa-regular fa-star" key={i+'etoile_vide'+x} className='star'/>)
           }}
-          skills.push(<div className='skill'><img src={jsonSkills[x].img} key={x} alt={jsonSkills[x].name} className='icon'/><div className='stars'>{stars}</div></div>);
+          skills.push(<div className='skill' key={x+'skill'}><img src={jsonSkills[x].img} key={x} alt={jsonSkills[x].name} className='icon'/><div className='stars'>{stars}</div></div>);
        }
       }
 
@@ -26,8 +26,8 @@ export default function Skills() {
 
 
   return (
-    <div className='skills'>
+    <section className='skills'>
       {skills}
-    </div>
+    </section>
   )
 }

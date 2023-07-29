@@ -48,23 +48,23 @@ export default function Projects() {
     }
 
     let lilArray = [];
-    lilArray.push(<img src={jsonProjects[x].picture} className={'pictureProject pictureProject'+x}onClick={clicked} alt={jsonProjects[x].name}/>);
-    lilArray.push(<video controls autoPlay src={jsonProjects[x].link} type="video/mp4" className={'video none video'+x}/>)
-    lilArray.push(<h3 className='projectName'>{jsonProjects[x].name}</h3>);
-    lilArray.push(<p className={'description none description'+x}>{jsonProjects[x].description}</p>);
-    lilArray.push(<p className={'problems none problems'+x}>{jsonProjects[x].problèmes}</p>);
+    lilArray.push(<img src={jsonProjects[x].picture} className={'pictureProject pictureProject'+x}onClick={clicked} alt={jsonProjects[x].name} key={jsonProjects[x].name+'img'}/>);
+    lilArray.push(<video controls autoPlay src={jsonProjects[x].link} type="video/mp4" className={'video none video'+x} key={jsonProjects[x].name+'video'}/>)
+    lilArray.push(<h3 className='projectName' key={jsonProjects[x].name}>{jsonProjects[x].name}</h3>);
+    lilArray.push(<p className={'description none description'+x} key={jsonProjects[x].name+'description'}>{jsonProjects[x].description}</p>);
+    lilArray.push(<p className={'problems none problems'+x} key={jsonProjects[x].name+'problems'}>{jsonProjects[x].problèmes}</p>);
     let skillsArray =[];
     for (let i =0; i<jsonProjects[x].skills.length;i++){
-      skillsArray.push(<img src={jsonProjects[x].skills[i]}  className='skillProject' alt='technologie'/>)
+      skillsArray.push(<img src={jsonProjects[x].skills[i]}  className='skillProject' alt='technologie' key={jsonProjects[x].skills[i]}/>)
     };
-    lilArray.push(<div className={'skillsProject none skillsProject'+[x]}>{skillsArray}</div>);
-    array.push(<div className={'oneProject project'+x} >{lilArray}</div>)
+    lilArray.push(<div className={'skillsProject none skillsProject'+[x]} key={x+'skills'}>{skillsArray}</div>);
+    array.push(<div className={'oneProject project'+x} key={x+'Project'}>{lilArray}</div>)
   }
 
 
   return (
-    <div className='projects'>
+    <section className='projects'>
       {array}
-    </div>
+    </section>
   )
 }

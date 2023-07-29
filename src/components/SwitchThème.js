@@ -49,8 +49,8 @@ export default function SwitchThème() {
 
   return (
     <div onClick={switchThème} className='switch'>
-      <img src='assets/icons/sun.svg' className='sun' alt='sun'/>
-      <img src='assets/icons/moon.png'className='moon none' alt='moon'/>
+      <img src='assets/icons/sun.svg' className='sun' alt='sun' tabIndex={0}/>
+      <img src='assets/icons/moon.png'className='moon none' alt='moon' tabIndex={0}/>
     </div>
   )
 }

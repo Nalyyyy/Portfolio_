@@ -31,19 +31,19 @@ export default function Header() {
 
 
   return (
-      <div className='header'  >
+      <header className='header'  >
           <div className='headerBackground close' ></div>
           <h1 className='logo'>ANCELIN YLAN</h1>
-          <div className='headerContent close'>
-              <a href='#aPropos' className='hook' onClick={openClose}>A Propos</a>
-              <a href='#mesCompétences' className='hook' onClick={openClose}>Mes compétences</a>
-              <a href='#monParcours' className='hook' onClick={openClose}>Mon parcours</a>
-              <a href='#mesProjets'className='hook' onClick={openClose}>Mes projets</a>
-              <a href='#Contact' className='hook' onClick={openClose}>Contact</a>
-          </div>
+          <nav className='headerContent close'>
+              <a href='#aPropos' className='hook' onClick={openClose} aria-label="A propos">A Propos</a>
+              <a href='#mesCompétences' className='hook' onClick={openClose} aria-label="Mes compétences">Mes compétences</a>
+              {/* <a href='#monParcours' className='hook' onClick={openClose} aria-label="Mon parcours">Mon parcours</a> */}
+              <a href='#mesProjets'className='hook' onClick={openClose} aria-label="Mes projets">Mes projets</a>
+              <a href='#Contact' className='hook' onClick={openClose} aria-label="Contact">Contact</a>
+          </nav>
           <span className='chevron up none' onClick={openClose}><FontAwesomeIcon icon={faChevronUp} /></span>
           <span className='chevron down ' onClick={openClose}><FontAwesomeIcon icon={faChevronDown} /></span>
-      </div>
+      </header>
 
   )
 }

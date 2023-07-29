@@ -14,6 +14,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Content() {
+
   return (
     <div className='content'>
       <Loader/>
@@ -24,33 +25,33 @@ export default function Content() {
       <SwitchThème/>
       <h1 className='h1intro'>Ylan Ancelin</h1>
       <h2 className='h2intro'>Développeur web.</h2>
-      <p className='intro'>Bienvenue sur mon portfolio </p>
-      <a href='#aPropos' className='bigChevron'><FontAwesomeIcon icon={faChevronDown} /></a>
+      <h3 className='intro'>Bienvenue sur mon portfolio </h3>
+      <a href='#aPropos' className='bigChevron' aria-label="Découvrez moi"><FontAwesomeIcon icon={faChevronDown} /></a>
       {/* <div className='line'></div> */}
 
-      <h2 id='aPropos'>A propos de moi</h2>
+      <h2 id='aPropos' tabIndex={0}>A propos de moi</h2>
       <p className='aProposContent'> Bonjour, je m'appelle Ylan Ancelin, je suis développeur web et je vis à
-        Bordeaux. Je peux créer le front-end de sites où d'applications web avec rigueur, j'aime bien écrire 
-        du code propre et compréhensible. <br/>
+        Bordeaux. Je me suis formé pendant 8 mois chez OpenClassrooms (site de formation en ligne) où j'ai appris à coder du front mais également 
+        du back, à optimiser un site et son SEO ou encore à planifier le développement d'un site. Je peux créer le 
+        front-end de sites où d'applications web avec rigueur, j'aime bien écrire du code propre et compréhensible.
+         <br/>
         Je suis prêt à saisir les opportunités d'emplois où encore à réaliser vos missions (si vous en avez) , n'hésitez 
         pas à me <a href='#Contact'>contacter</a>.
       </p>
       
 
-      <h2 id='mesCompétences'>Mes compétences</h2>
+      <h2 id='mesCompétences' tabIndex={0}>Mes compétences</h2>
       <Skills/>
-      <p className='mesCompétencesContent'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore </p>
       
 
-      <h2 id='monParcours'>Mon parcours</h2>
+      {/* <h2 id='monParcours'>Mon parcours</h2> */}
 
 
-      <h2 id='mesProjets'>Mes projets</h2>
+      <h2 id='mesProjets' tabIndex={0}>Mes projets</h2>
       <Projects/>
 
 
-      <h2 id='Contact'>Contact</h2>
+      <h2 id='Contact' tabIndex={0} >Contact</h2>
       <Contact/>
 
       <Footer/>

@@ -15,7 +15,7 @@
     margin: auto;
     box-sizing: border-box;
     flex-direction: column;
-    height: 300px;
+    height: 20vw;
     overflow: hidden;
     transition: top 5s, left 5s;
 }
@@ -23,6 +23,7 @@
 .pictureProject{
     border-radius: 20px;
     width: 100%;
+    height: auto;
     opacity: .65;
 }
 .pictureProject:hover{
@@ -86,5 +87,6 @@
     display: flex;
     align-items: center;
     height:40px ;
+    width: auto;
     margin-right: 10px;
 }
