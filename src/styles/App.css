@@ -311,4 +311,12 @@ label{
     .iconsFooter{width: 50vw!important;}
     .iconSpan{width: 33px!important;
         height: 33px!important;}
+    .cursor{display: none!important;}
+    .header{pointer-events: none!important;}
+    .chevron{pointer-events: all!important;
+        margin-right: 10px!important;}
+    .logo{margin-left: 10px!important;}
+    .projectClicked{width: 70vw!important;
+        left: 15%!important;
+        height: auto!important;}
 }
