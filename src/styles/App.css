@@ -283,6 +283,11 @@ label{
 }
 
 @media screen and (max-width:850px){
+    .content{padding: 0 5vw;}
+    .aProposContent{font-size: 4vw!important;}
+    .h1intro{font-size: 10vw!important;}
+    h2{font-size: 8vw;}
+    .h2intro , .intro{font-size: 4vw!important;}
     .header{height: 250px!important;
         flex-direction: column!important;
         align-items: start!important;}
@@ -300,5 +305,5 @@ label{
     .skill{margin-bottom: 20px!important;}
     .icon{height:100px !important;
         margin-right: 40px!important;}
-    .star{height: 50px!important;}
+    .star{height: 6.5vw!important;}
 }
