@@ -17,7 +17,7 @@ export default function Content() {
 
   return (
     <div className='content'>
-      {/* <Loader/> */}
+      <Loader/>
       <Scrollbar/>
       <Cursor/>
       <HackerBackground/>

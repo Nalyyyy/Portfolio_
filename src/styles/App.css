@@ -283,6 +283,7 @@ label{
 }
 
 @media screen and (max-width:850px){
+    .loader{display: none!important;}
     .content{padding: 0 5vw;}
     .aProposContent{font-size: 4vw!important;}
     .h1intro{font-size: 10vw!important;}
@@ -303,7 +304,11 @@ label{
     .skills{display: flex!important;
         flex-direction: column!important;}
     .skill{margin-bottom: 20px!important;}
-    .icon{height:100px !important;
+    .icon{height:13vw !important;
         margin-right: 40px!important;}
     .star{height: 6.5vw!important;}
+    .oneProject{height: 50vw!important;}
+    .iconsFooter{width: 50vw!important;}
+    .iconSpan{width: 33px!important;
+        height: 33px!important;}
 }
