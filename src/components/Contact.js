@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser'
 export default function Contact() {
     const sendEmail = (e) =>{
         e.preventDefault();
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID , process.env.REACT_APP_TEMPLATE_ID, e.target , process.env.REACT_APP_PUBLIC_KEY);
+        emailjs.sendForm('service_c1egof2' , 'template_mkhos5w', e.target , 'yis8FgXJGDf-pbVyx');
         const form = document.querySelector('.form');
         form.classList.add('none')
         const merci = document.querySelector('.merci');

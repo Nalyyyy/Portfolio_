@@ -57,6 +57,7 @@ export default function Projects() {
     for (let i =0; i<jsonProjects[x].skills.length;i++){
       skillsArray.push(<img src={jsonProjects[x].skills[i]}  className='skillProject' alt='technologie' key={jsonProjects[x].skills[i]}/>)
     };
+    skillsArray.push(<a href={jsonProjects[x].github} key={jsonProjects[x].github+'lien'} className='skillProject'><img src='assets/icons/github.png' className='githubProject skillProject' alt='lien github'key={jsonProjects[x].github}/> </a> )
     lilArray.push(<div className={'skillsProject none skillsProject'+[x]} key={x+'skills'}>{skillsArray}</div>);
     array.push(<div className={'oneProject project'+x} key={x+'Project'}>{lilArray}</div>)
   }
